@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Analytical Exposition – Interactive Media for Grade XI</title>
+<style>
+:root{color-scheme:light;--tx:#1a1a1a;--mu:#555;--bd:#e7ddd3;--ac:#6D1426;--soft:#F7EFE6;--ok:#166534;--okb:#dcfce7;--no:#991b1b;--nob:#fee2e2;--h1:#F4E8D8;--h2:#EBC9D0;--h3:#D6E4F0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{background:#fff;color:var(--tx)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px}
+*{-webkit-tap-highlight-color:transparent}
+button{font:inherit;color:inherit;touch-action:manipulation;cursor:pointer}
+header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+header svg{flex:none;width:60px;height:60px}
+h1{font-size:1.3rem;line-height:1.25;margin:0}
+.sub{color:var(--mu);margin:2px 0 0;font-size:.95rem}
+.author-tag{display:inline-block;margin-top:4px;font-size:0.85rem;color:var(--ac);font-weight:600}
+nav{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:12px}
+@media(min-width:560px){nav{grid-template-columns:repeat(4,1fr)}}
+nav button{min-height:48px;border:2px solid var(--bd);background:#fff;border-radius:14px;padding:6px 10px;font-weight:600}
+nav button[aria-selected="true"]{background:var(--ac);border-color:var(--ac);color:#fff}
+.tip{display:flex;gap:10px;align-items:center;background:var(--soft);border-radius:14px;padding:10px 14px;margin:0 0 12px;font-size:.95rem}
+.tip b{font-size:1.3rem}
+.card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:14px;margin:10px 0}
+.lbl{font-weight:700;color:var(--ac)}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.opt{min-height:48px;border:2px solid var(--bd);background:#fff;border-radius:12px;padding:8px 14px;text-align:left}
+.row.three .opt{flex:1 1 30%;text-align:center}
+.row.col .opt{flex:1 1 100%}
+.opt.ok{background:var(--okb);border-color:var(--ok)}
+.opt.no{background:var(--nob);border-color:var(--no)}
+.fb{margin-top:8px;font-size:.95rem;min-height:1px}
+.chip{min-height:46px;border:2px solid var(--bd);background:#fff;border-radius:999px;padding:6px 16px;font-weight:600}
+.chip[aria-pressed="true"]{background:var(--ac);border-color:var(--ac);color:#fff}
+.on-c mark.c{background:var(--h1)}.on-m mark.m{background:var(--h2)}.on-e mark.e{background:var(--h3)}
+mark{background:transparent;color:inherit;border-radius:4px;padding:0 2px}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid var(--bd);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.sw{overflow-x:auto}
+.score{font-weight:700;font-size:1.1rem;margin:10px 0}
+.again{min-height:46px;border:2px solid var(--ac);background:#fff;color:var(--ac);border-radius:12px;padding:6px 16px;font-weight:600;margin-top:6px}
+footer{margin-top:24px;padding-top:12px;border-top:1px solid var(--bd);text-align:center;font-size:0.85rem;color:var(--mu)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+<header>
+<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 14a8 8 0 0 1 8-8h32a8 8 0 0 1 8 8v24a8 8 0 0 1-8 8H30L16 58V46h0a8 8 0 0 1-8-8z" fill="#6D1426"/><circle cx="24" cy="26" r="3.2" fill="#F4E8D8"/><circle cx="40" cy="26" r="3.2" fill="#F4E8D8"/><path d="M24 34c3 4 13 4 16 0" stroke="#F4E8D8" stroke-width="3" stroke-linecap="round" fill="none"/><circle cx="19" cy="33" r="3" fill="#EBC9D0" opacity=".7"/><circle cx="45" cy="33" r="3" fill="#EBC9D0" opacity=".7"/></svg>
+<div>
+  <h1>Analytical Exposition Text</h1>
+  <p class="sub">English · Grade XI</p>
+  <span class="author-tag">Compiled by Safira Najwa Aisara</span>
+</div>
+</header>
+
+<nav role="tablist">
+<button role="tab" data-t="materi" aria-selected="true">📖 Material</button>
+<button role="tab" data-t="susun" aria-selected="false">🧩 Arrange the Text</button>
+<button role="tab" data-t="bahasa" aria-selected="false">🔍 Language Features</button>
+<button role="tab" data-t="kuis" aria-selected="false">⭐ Quiz</button>
+</nav>
+
+<section id="materi">
+<div class="tip"><b>💬</b><span>Let's get to know it first: this text is used to persuade readers!</span></div>
+<div class="card"><span class="lbl">Social function:</span> to persuade readers that something is important to consider, using logical arguments.</div>
+<div class="sw"><table>
+<tr><th>Part</th><th>Content</th></tr>
+<tr><td><span class="lbl">Thesis</span></td><td>Introduction of the topic and the writer's position/opinion</td></tr>
+<tr><td><span class="lbl">Arguments</span></td><td>Reasons: point + elaboration</td></tr>
+<tr><td><span class="lbl">Reiteration</span></td><td>Restatement of the opinion (and a recommendation)</td></tr>
+</table></div>
+<h2 style="font-size:1.05rem;margin:16px 0 4px">Model text</h2>
+<div class="card">
+<p><b>Should Students Be Allowed to Bring Smartphones to School?</b></p>
+<p><span class="lbl">Thesis</span> Smartphones have become part of teenagers' daily life. In my opinion, students should be allowed to bring smartphones to school as long as clear rules are applied.</p>
+<p><span class="lbl">Argument 1</span> Firstly, smartphones are useful learning tools. Students can look up word meanings, read e-books, and join online quizzes. As a result, learning becomes more interesting.</p>
+<p><span class="lbl">Argument 2</span> Secondly, smartphones help students stay safe. Parents can contact their children in an emergency. Therefore, a phone gives peace of mind.</p>
+<p><span class="lbl">Reiteration</span> In conclusion, smartphones can support learning and safety. Thus, schools should allow them with proper rules.</p>
+</div>
+</section>
+
+<section id="susun" hidden>
+<div class="tip"><b>🧩</b><span>Tap the answer you think is correct for each paragraph.</span></div>
+<div id="ptasks"></div>
+<p class="score" id="pscore"></p>
+<button class="again" id="pagain" hidden>🔄 Try again</button>
+</section>
+
+<section id="bahasa" hidden>
+<div class="tip"><b>🔍</b><span>Tap a button to highlight the language features in the paragraph.</span></div>
+<div class="row" id="chips">
+<button class="chip" data-k="c" aria-pressed="false">Connectives</button>
+<button class="chip" data-k="m" aria-pressed="false">Modal verbs</button>
+<button class="chip" data-k="e" aria-pressed="false">Evaluative words</button>
+</div>
+<div class="card" id="lang">
+<p style="margin:0">Schools <mark class="m">should</mark> rethink homework. <mark class="c">Firstly</mark>, too much homework is <mark class="e">harmful</mark> because students <mark class="m">can</mark> become tired and stressed. <mark class="c">Moreover</mark>, free time is <mark class="e">essential</mark> for family, sleep, and hobbies. <mark class="c">Therefore</mark>, teachers <mark class="m">must</mark> give <mark class="e">meaningful</mark> tasks only. <mark class="c">In conclusion</mark>, less but better homework is <mark class="e">beneficial</mark> for everyone.</p>
+</div>
+<p class="sub">Note: all the sentences use the <b>simple present tense</b>.</p>
+</section>
+
+<section id="kuis" hidden>
+<div class="tip"><b>⭐</b><span>5 short questions. Good luck, you can do it!</span></div>
+<div id="qbox"></div>
+<p class="score" id="qscore"></p>
+<button class="again" id="qagain" hidden>🔄 Retry the quiz</button>
+</section>
+
+<footer>
+  Interactive English Learning Media · Compiled by <b>Safira Najwa Aisara</b>
+</footer>
+</main>
+<script>
+(function(){
+function $(i){return document.getElementById(i)}
+var tabs=document.querySelectorAll('nav button');
+tabs.forEach(function(b){b.addEventListener('click',function(){
+tabs.forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false')});
+['materi','susun','bahasa','kuis'].forEach(function(id){$(id).hidden=(id!==b.dataset.t)});
+window.scrollTo(0,0);
+});});
+
+function card(htmlTop){var d=document.createElement('div');d.className='card';d.innerHTML=htmlTop+'<div class="row"></div><div class="fb"></div>';return d}
+
+/* Arrange the Text */
+var P=[
+{t:"Online learning has changed how we study. In my opinion, it should be used together with face-to-face classes.",a:"Thesis"},
+{t:"First, online learning is flexible. Students can review videos again and again at their own pace.",a:"Argument"},
+{t:"Moreover, it builds independence. Therefore, students learn to manage their own time.",a:"Argument"},
+{t:"In conclusion, a mix of online and offline lessons is the best choice for students.",a:"Reiteration"}];
+function susun(){
+var box=$('ptasks');box.innerHTML='';$('pscore').textContent='';$('pagain').hidden=true;
+var done=0,right=0;
+P.forEach(function(p,i){
+var d=card('<div>'+(i+1)+'. '+p.t+'</div>');d.querySelector('.row').classList.add('three');
+var r=d.querySelector('.row'),fb=d.querySelector('.fb'),answered=false;
+['Thesis','Argument','Reiteration'].forEach(function(o){
+var b=document.createElement('button');b.className='opt';b.type='button';b.textContent=o;
+b.addEventListener('click',function(){if(answered)return;answered=true;done++;
+if(o===p.a){b.classList.add('ok');right++;fb.textContent='Correct! 🎉'}
+else{b.classList.add('no');fb.textContent='Not quite 🙈 The answer is: '+p.a+'.'}
+if(done===P.length){$('pscore').textContent='Score: '+right+' / '+P.length+(right===P.length?' 🌟 Perfect!':' 👍');$('pagain').hidden=false}});
+r.appendChild(b)});
+box.appendChild(d)});
+}
+$('pagain').addEventListener('click',susun);susun();
+
+/* Language Features */
+var lang=$('lang');
+document.querySelectorAll('#chips .chip').forEach(function(c){c.addEventListener('click',function(){
+var on=c.getAttribute('aria-pressed')!=='true';c.setAttribute('aria-pressed',on?'true':'false');
+lang.classList.toggle('on-'+c.dataset.k,on)})});
+
+/* Quiz */
+var Q=[
+{q:"What is the social function of an analytical exposition text?",o:["To entertain readers","To persuade readers that something is important","To describe a person","To retell past events"],a:1},
+{q:"Which part states the writer's position?",o:["Thesis","Elaboration","Reiteration","Orientation"],a:0},
+{q:"Which word is a connective of addition?",o:["Therefore","Moreover","However","Although"],a:1},
+{q:"Choose the best reiteration:",o:["Many students like phones.","For example, phones have cameras.","In conclusion, schools should allow phones with clear rules.","Phones were invented long ago."],a:2},
+{q:"Which tense is mainly used in this text type?",o:["Simple past","Past perfect","Simple present","Future continuous"],a:2}];
+function kuis(){
+var box=$('qbox');box.innerHTML='';$('qscore').textContent='';$('qagain').hidden=true;
+var qd=0,qr=0;
+Q.forEach(function(x,i){
+var d=card('<div><b>'+(i+1)+'.</b> '+x.q+'</div>');d.querySelector('.row').classList.add('col');
+var r=d.querySelector('.row'),fb=d.querySelector('.fb'),ans=false,bs=[];
+x.o.forEach(function(t,j){var b=document.createElement('button');b.className='opt';b.type='button';b.textContent=t;bs.push(b);
+b.addEventListener('click',function(){if(ans)return;ans=true;qd++;
+if(j===x.a){b.classList.add('ok');qr++;fb.textContent='Correct! 🎉'}
+else{b.classList.add('no');bs[x.a].classList.add('ok');fb.textContent='Not quite 🙈'}
+if(qd===Q.length){var s=Math.round(qr/Q.length*100);$('qscore').textContent='Score: '+s+' ('+qr+'/'+Q.length+' correct) '+(s===100?'🌟':'👍');$('qagain').hidden=false}});
+r.appendChild(b)});
+box.appendChild(d)});
+}
+$('qagain').addEventListener('click',kuis);kuis();
+})();
+</script>
+</body>
+</html>
